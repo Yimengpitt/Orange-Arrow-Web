@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class DisplayUserComponent implements OnInit {
   users: Observable <any[]>;
-  usersList: AngularFireList<any>;
+  //usersList: AngularFireList<any>;
   constructor(db: AngularFireDatabase) {
     this.users = db.list('/UsersInfo').valueChanges();
     this.users.subscribe(val => console.log(val));
