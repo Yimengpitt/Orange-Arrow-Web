@@ -8,10 +8,13 @@ import { AuthService } from './../services/auth.service';
 })
 
 export class ForgotPasswordComponent{
+  constructor(private auth:AuthService){}
+   
   email="";
   resetPassword(){
-    console.log(this.email);
-    //this.auth.resetPassword(this.email)
+    //console.log(this.auth.helloWorld());
+    //console.log(this.email);
+    this.auth.resetPassword(this.email);
   }
   
 }

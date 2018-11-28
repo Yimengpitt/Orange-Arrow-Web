@@ -1,5 +1,5 @@
 <ul>
   <li *ngFor="let user of (users | async)">
-    {{ user.Email}}
+    {{ user.Email }} <!--this will need to change depending on the return type of the user-->
   </li>
 </ul>
