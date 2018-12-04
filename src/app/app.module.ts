@@ -8,12 +8,16 @@ import { RouterModule } from '@angular/router';
 import { TriviaComponent } from './trivia/trivia.component';
 import { routes } from './app-routing/routes';
 import { HomeComponent } from './home/home.component';
+import { NameComponent } from './name/name.component';
+import { WordscrambleComponent } from './wordscramble/wordscramble.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TriviaComponent,
-    HomeComponent
+    HomeComponent,
+    NameComponent,
+    WordscrambleComponent
   ],
   imports: [
     BrowserModule,
